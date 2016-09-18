@@ -1,0 +1,32 @@
+{
+  "name": "evento_facil",
+  "version": "0.0.0",
+  "description": "Projeto de Plataforma de Eventos para Gama Academy",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "node app/server.js",
+    "test": "mocha ./app/lead/lead.spec.js"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "mocha": "3.0.x"
+  },
+  "dependencies": {
+    "mongoose": "4.0.x",
+    "http-status": "0.2.x",
+    "express": "4.13.x",
+    "body-parser": "1.14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipegoncalvesmarques/evento_facil.git"
+  },
+  "author": "Felipe Gonçalves Marques",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felipegoncalvesmarques/evento_facil/issues"
+  },
+  "homepage": "https://github.com/felipegoncalvesmarques/evento_facil#readme"
+}

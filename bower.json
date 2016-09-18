@@ -1,0 +1,13 @@
+{
+  "name": "evento_facil",
+  "version": "0.0.0",
+  "description": "Projeto de Plataforma de Eventos para Gama Academy",
+  "homepage": "https://github.com/felipegoncalvesmarques/evento_facil.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "bootstrap": "3.3.x"
+  }
+}

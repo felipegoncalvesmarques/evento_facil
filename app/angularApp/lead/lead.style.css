@@ -1,0 +1,30 @@
+/**
+* @Author: Felipe Gonçalves Marques
+* @Date:   2016-09-18 12:09:44
+* @Email:  marques.goncalves.felipe@gmail.com
+* @Last modified by:   Felipe Gonçalves Marques
+* @Last modified time: 2016-09-18 12:09:05
+*/
+
+.lead-form {
+  max-width: 250px;
+  width: 100%;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div {
+  height: 30px;
+}
+label {
+  display: inline-block;
+  float: left;
+  clear: left;
+}
+input {
+  display: inline-block;
+  float: right;
+}
+span {
+  margin: 8px;
+}
