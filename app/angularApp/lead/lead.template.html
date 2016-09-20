@@ -3,13 +3,19 @@
 @Date:   2016-09-18 01:09:61
 @Email:  marques.goncalves.felipe@gmail.com
 @Last modified by:   Felipe Gonçalves Marques
-@Last modified time: 2016-09-18 15:09:85
+@Last modified time: 2016-09-19 22:09:67
 -->
 
-<div class='lead-form'>
-  <form>
-    <div><label>Nome: </label><input class="nome" type="text"></div>
-    <div><label>Email: </label><input class="email" type="text"></div>
-    <div><input class="enviar" type="submit" value="Cadastrar"></div>
+<div class="container">
+  <form class="form-signin" name="lead" ng-submit="$ctrl.cadastrarLead(lead)">
+    <h2 class="form-signin-heading"><img src="/lead/logo.png" height="200" width="300"></h2>
+    <label for="inputName" class="sr-only">Nome</label>
+    <input ng-model="lead.name" type="name" id="inputName" class="form-control" placeholder="Nome" required autofocus>
+    <div class="form-group has-danger">
+      <label class="sr-only" for="inputEmail">Email</label>
+      <input ng-model="lead.email" type="email" class="form-control form-control-danger" id="inputEmail" placeholder="Email" required autofocus>
+      <b ng-show="lead.$error.email[0].$invalid" class="form-text text-muted email-invalido">Email inválido</b>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
   </form>
 </div>

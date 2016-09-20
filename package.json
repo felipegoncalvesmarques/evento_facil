@@ -17,7 +17,9 @@
     "mongoose": "4.0.x",
     "http-status": "0.2.x",
     "express": "4.13.x",
-    "body-parser": "1.14.x"
+    "body-parser": "1.14.x",
+    "request-ip": "1.2.x",
+    "ip": "1.1.x"
   },
   "repository": {
     "type": "git",

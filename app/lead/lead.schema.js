@@ -3,7 +3,7 @@
 * @Date:   2016-09-17 20:09:13
 * @Email:  marques.goncalves.felipe@gmail.com
 * @Last modified by:   Felipe Gonçalves Marques
-* @Last modified time: 2016-09-18 01:09:21
+* @Last modified time: 2016-09-18 19:09:32
 */
 
 var mongoose = require('mongoose');
@@ -15,7 +15,7 @@ var leadSchema = {
           lowercase: true,
           unique: true,
           required: true,
-          match: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+          match: /^[a-z0-9!#$%&'*+/=?^_`{|}~.-]+@[a-z0-9-]+(\.[a-z0-9-]+)*$/i
         },
   ip: {type: Number,
        get: v => Math.round(v),

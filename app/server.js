@@ -3,13 +3,14 @@
 * @Date:   2016-09-18 00:09:82
 * @Email:  marques.goncalves.felipe@gmail.com
 * @Last modified by:   Felipe Gonçalves Marques
-* @Last modified time: 2016-09-18 11:09:02
+* @Last modified time: 2016-09-19 23:09:43
 */
 
 var bodyParser = require('body-parser');
 var express = require('express');
 var leadHandler = require("./lead/lead.handler.js")
 var app = express();
+app.enable('trust proxy');
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));

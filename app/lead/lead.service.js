@@ -3,7 +3,7 @@
 * @Date:   2016-09-17 21:09:69
 * @Email:  marques.goncalves.felipe@gmail.com
 * @Last modified by:   Felipe Gonçalves Marques
-* @Last modified time: 2016-09-18 00:09:09
+* @Last modified time: 2016-09-19 23:09:50
 */
 
 var mongoose = require('mongoose');
@@ -18,7 +18,7 @@ function saveLead(lead, callback) {
   var leadObject = new Lead(lead);
   leadObject.save(function(err, leadObj) {
     if (err) {
-      console.log(err.toString());
+      console.log('Hello' + err.toString());
       return callback(false)
     }
     return callback(true);

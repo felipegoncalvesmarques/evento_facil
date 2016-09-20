@@ -3,28 +3,35 @@
 * @Date:   2016-09-18 12:09:44
 * @Email:  marques.goncalves.felipe@gmail.com
 * @Last modified by:   Felipe Gonçalves Marques
-* @Last modified time: 2016-09-18 12:09:05
+* @Last modified time: 2016-09-19 22:09:90
 */
-
-.lead-form {
-  max-width: 250px;
-  width: 100%;
-  padding-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
+.email-invalido {
+  color: red;
 }
-div {
-  height: 30px;
+.form-signin {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
 }
-label {
-  display: inline-block;
-  float: left;
-  clear: left;
+.form-signin-heading {
+  font-weight: bold;
+  text-align: center;
 }
-input {
-  display: inline-block;
-  float: right;
+.form-signin .form-signin-heading,
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
 }
-span {
-  margin: 8px;
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
