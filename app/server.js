@@ -3,7 +3,7 @@
 * @Date:   2016-09-18 00:09:82
 * @Email:  marques.goncalves.felipe@gmail.com
 * @Last modified by:   Felipe Gonçalves Marques
-* @Last modified time: 2016-09-19 23:09:43
+* @Last modified time: 2016-09-19 23:09:75
 */
 
 var bodyParser = require('body-parser');
@@ -20,6 +20,6 @@ app.get('/registrar', function(req,res) {
   res.sendFile('angularApp/index.html', {"root": __dirname})
 });
 
-app.listen(3000, function() {
+app.listen(80, function() {
   console.log('App listening on port 3000!');
 });
