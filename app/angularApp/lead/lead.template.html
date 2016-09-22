@@ -3,19 +3,49 @@
 @Date:   2016-09-18 01:09:61
 @Email:  marques.goncalves.felipe@gmail.com
 @Last modified by:   Felipe Gonçalves Marques
-@Last modified time: 2016-09-19 22:09:67
+@Last modified time: 2016-09-22 11:09:98
 -->
 
-<div class="container">
-  <form class="form-signin" name="lead" ng-submit="$ctrl.cadastrarLead(lead)">
-    <h2 class="form-signin-heading"><img src="/lead/logo.png" height="200" width="300"></h2>
-    <label for="inputName" class="sr-only">Nome</label>
-    <input ng-model="lead.name" type="name" id="inputName" class="form-control" placeholder="Nome" required autofocus>
-    <div class="form-group has-danger">
-      <label class="sr-only" for="inputEmail">Email</label>
-      <input ng-model="lead.email" type="email" class="form-control form-control-danger" id="inputEmail" placeholder="Email" required autofocus>
-      <b ng-show="lead.$error.email[0].$invalid" class="form-text text-muted email-invalido">Email inválido</b>
+<div class="container" id="container_position">
+            <div class="row" id="base_branca">
+                <div class="col-lg-7 col-lg-offset-1" >
+                    <img src="/lead/livro.png" alt="Guia Definitivo" class="imagemLivro" />
+                    <p class="title">JOGA UM TEXTO AQUI!</p>
+            		<p class="subtitle">ESCREVE MAIS UM TEXTINHO AQUI!</p>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam quam, iaculis ut suscipit eget, laoreet venenatis mauris. Nullam ut faucibus odio.</p></br>
+                    <p class="content_bold">Bora Lá receber o Guia Completo?</p>
+
+
+                </div>
+                <div class="col-lg-3">
+                    <img src="/lead/logo.png" alt="Logo Bora Lá" class="logo" />
+                    <p class="title_azul">FAÇA O DOWNLOAD</p>
+            		<p class="subtitle_azul">GRATUITO DO E-BOOK</p>
+
+                    <form name="sentMessage" id="contactForm">
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                            	<input type="text" class="form-control" placeholder="NOME" id="name" required data-validation-required-message="Ué... esqueceu seu nome?">
+
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <input type="email" class="form-control" placeholder="EMAIL" id="email" required data-validation-required-message="Puxa... vou precisar do seu email">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="form-control btn btn-success">#BORALÁ</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <p class="rodape">© 2016 Bora Lá.</p>
+
+                </div>
+            </div>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
-  </form>
-</div>

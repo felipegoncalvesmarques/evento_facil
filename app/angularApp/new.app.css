@@ -1,0 +1,50 @@
+/**
+* @Author: Felipe Gonçalves Marques
+* @Date:   2016-09-20 22:09:76
+* @Email:  marques.goncalves.felipe@gmail.com
+* @Last modified by:   Felipe Gonçalves Marques
+* @Last modified time: 2016-09-21 00:09:04
+*/
+
+body {
+  width: 100%;
+  background-image: url('background.jpg');
+  background-size: cover;
+
+}
+.title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  color: #50525F;
+  font-weight: light;
+  margin: 1px;
+}
+.subtitle {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  color: #50525F;
+  font-weight: bold;
+  margin: 1px;
+}
+.content {
+  font-size: 19px;
+  color: #50525F;
+  font-weight: light;
+}
+.ticket {
+  margin: 100px auto;
+  max-width: 690px;
+}
+
+.header, .ebook, .form {
+  width: 100%;
+  padding: 25px 25px 25px 25px;
+  background-color: #FFFFFF;
+  height: 200px;
+  align-items: center;
+}
+.video {
+  height: 100px;
+  width: 100%;
+  background-color: #41C1F2;
+}
