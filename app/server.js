@@ -5,7 +5,7 @@
 * @Last modified by:   Felipe Gonçalves Marques
 * @Last modified time: 2016-09-22 19:09:72
 */
-
+require('newrelic');
 var bodyParser = require('body-parser');
 var express = require('express');
 var leadHandler = require("./lead/lead.handler.js")
