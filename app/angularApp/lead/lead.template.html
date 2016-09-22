@@ -3,16 +3,16 @@
 @Date:   2016-09-18 01:09:61
 @Email:  marques.goncalves.felipe@gmail.com
 @Last modified by:   Felipe Gonçalves Marques
-@Last modified time: 2016-09-22 11:09:98
+@Last modified time: 2016-09-22 19:09:84
 -->
 
 <div class="container" id="container_position">
             <div class="row" id="base_branca">
                 <div class="col-lg-7 col-lg-offset-1" >
                     <img src="/lead/livro.png" alt="Guia Definitivo" class="imagemLivro" />
-                    <p class="title">JOGA UM TEXTO AQUI!</p>
-            		<p class="subtitle">ESCREVE MAIS UM TEXTINHO AQUI!</p>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam quam, iaculis ut suscipit eget, laoreet venenatis mauris. Nullam ut faucibus odio.</p></br>
+                    <p class="title">Quer produzir um evento de sucesso?</p>
+            		<p class="subtitle">Esse guia é perfeito para você!</p>
+                    <p class="content">A Boralá Conteúdos Customizados produz informativos compactos e sempre atualizados, trazendo os conteúdos mais relevantes para que você possa criar o seu evento de forma simples e efetiva.</p></br>
                     <p class="content_bold">Bora Lá receber o Guia Completo?</p>
 
 
@@ -22,20 +22,19 @@
                     <p class="title_azul">FAÇA O DOWNLOAD</p>
             		<p class="subtitle_azul">GRATUITO DO E-BOOK</p>
 
-                    <form name="sentMessage" id="contactForm">
+                    <form name="lead" id="contactForm" ng-submit="$ctrl.cadastrarLead(lead)">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                            	<input type="text" class="form-control" placeholder="NOME" id="name" required data-validation-required-message="Ué... esqueceu seu nome?">
+                            	<input ng-model="lead.name" type="text" class="form-control" placeholder="NOME" id="name" required autofocus data-validation-required-message="Ué... esqueceu seu nome?">
 
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <input type="email" class="form-control" placeholder="EMAIL" id="email" required data-validation-required-message="Puxa... vou precisar do seu email">
+                                <input ng-model="lead.email" type="email" class="form-control" placeholder="EMAIL" id="email" required data-validation-required-message="Puxa... vou precisar do seu email">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
@@ -43,7 +42,6 @@
                             </div>
                         </div>
                     </form>
-
                     <p class="rodape">© 2016 Bora Lá.</p>
 
                 </div>

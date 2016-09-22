@@ -3,17 +3,11 @@
 * @Date:   2016-09-18 12:09:20
 * @Email:  marques.goncalves.felipe@gmail.com
 * @Last modified by:   Felipe Gonçalves Marques
-* @Last modified time: 2016-09-22 11:09:65
+* @Last modified time: 2016-09-22 19:09:81
 */
 
 @charset "UTF-8";
 /* CSS Document */
-
-body {
-  width: 100%;
-  background-image: url('../img/background.jpg');
-  background-size: cover;
-}
 
 #container_position{
 	margin-top:30px;
@@ -24,8 +18,13 @@ body {
 }
 
 .imagemLivro{
-	margin-left:-100px;
+	margin-left:0 auto;
+  margin-right: 0 auto;
 	margin-top:30px;
+  margin-bottom: 30px;
+  height: auto;
+  width: 600px;
+  max-width: 100%;
 }
 
 .title {
